@@ -1,4 +1,4 @@
-package com.devglan.config;
+package com.doug.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;

@@ -1,6 +1,6 @@
-package com.devglan.service;
+package com.doug.service;
 
-import com.devglan.model.User;
+import com.doug.model.User;
 
 import java.util.List;
 

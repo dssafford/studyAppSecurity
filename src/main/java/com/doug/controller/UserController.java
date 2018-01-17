@@ -1,9 +1,8 @@
-package com.devglan.controller;
+package com.doug.controller;
 
-import com.devglan.model.User;
-import com.devglan.service.UserService;
+import com.doug.model.User;
+import com.doug.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
