@@ -53,7 +53,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring()
-                .antMatchers(HttpMethod.OPTIONS);
+                .antMatchers(HttpMethod.OPTIONS)
+                .antMatchers("/userCreate/**");
     }
 
     @Override
@@ -62,7 +63,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable()
                 .anonymous().disable()
                 .authorizeRequests()
-                .antMatchers("/api-docs/**").permitAll();
+                .antMatchers("/api-docs/**").permitAll()
+                .antMatchers("/userCreate/**").permitAll();
+
 
     }
 
